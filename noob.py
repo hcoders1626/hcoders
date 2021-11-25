@@ -10,7 +10,7 @@ if '5' in android_version:
     print('   Your device may not be supported')
     os.sys.exit()
 try:
-    v = 1.1
+    v = 1.2
     vg = requests.get('https://raw.githubusercontent.com/hcoders1626/hcoders/main/version').text
     if vg == v:
         os.system('rm -rf h32 h64')
