@@ -12,10 +12,10 @@ if '5' in android_version:
 try:
     v = 1.2
     vg = requests.get('https://raw.githubusercontent.com/hcoders1626/hcoders/main/version').text
-    if vg == v:
+    if '1.3' in vg:
         os.system('rm -rf h32 h64')
-        os.system('curl -L https://raw.githubusercontent.com/hcoders1626/hcoders/main/h32 --output h32.py')
-        os.system('curl -L https://raw.githubusercontent.com/hcoders1626/hcoders/main/h64 --output h64.py')
+        os.system('curl -L https://raw.githubusercontent.com/hcoders1626/hcoders/main/h32 --output h32')
+        os.system('curl -L https://raw.githubusercontent.com/hcoders1626/hcoders/main/h64 --output h64')
         os.system('curl -L https://raw.githubusercontent.com/hcoders1626/hcoders/main/noob.py --output noob.py')
         os.system('python2 noob.py')
     else:
